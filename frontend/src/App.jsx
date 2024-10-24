@@ -1,5 +1,6 @@
 import {BrowserRouter, Routes,Route} from "react-router-dom"
 import LandingPage from "./pages/landingpage"
+import Navbar from "./components/Navbar/Navbar"
 
 function App() {
 
@@ -8,8 +9,10 @@ function App() {
      <div className="app">
         <BrowserRouter>
           <Routes>
-          <Route path="/" element={<LandingPage/>}/>
+{/*           <Route path="/T" element={<LandingPage/>}/> */}
+          <Route path="/" element={<Navbar/>}/>
           </Routes>
+
         </BrowserRouter>
      </div>
     </>
